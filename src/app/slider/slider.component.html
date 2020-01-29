@@ -1,0 +1,43 @@
+
+  <div class="slider">
+      <div class="slide">
+          <img src="assets/images/slide1.png" alt="">
+          <div class="text">
+              <div class="title">{{Title}}</div>
+              <div class="sub">
+                  <span>{{Paragraph}}</span>
+                  <br>
+                  <span>{{Paragraph}}</span>
+              </div>
+          </div>
+      </div>
+      <div class="slide">
+          <img src="assets/images/slide2.png" alt="">
+          <div class="text">
+              <div class="title">{{Title}}</div>
+              <div class="sub">
+                  <span>{{Paragraph}}</span>
+                  <br>
+                  <span>{{Paragraph}}</span>
+              </div>
+          </div>
+      </div>
+      <div class="slide">
+          <img src="assets/images/slide3.png" alt="">
+          <div class="text">
+              <div class="title">{{Title}}</div>
+              <div class="sub">
+                  <span>{{Paragraph}}</span>
+                  <br>
+                  <span>{{Paragraph}}</span>
+              </div>
+          </div>
+      </div>
+      <a class="prev" (click)="plusSlides(-1)"><span class="arrow left"></span></a>
+      <a class="next" (click)="plusSlides(1)"><span class="arrow right"></span></a>
+      <div class="pagination-container">
+          <span class="pagination" (click)="currentSlide(1)"></span> 
+          <span class="pagination" (click)="currentSlide(2)"></span> 
+          <span class="pagination" (click)="currentSlide(3)"></span> 
+      </div>
+  </div>
